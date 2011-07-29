@@ -27,23 +27,6 @@ public class NullTerrain extends JavaPlugin
 		PluginDescriptionFile desc = this.getDescription();
 		Configuration config = getConfiguration();
 		Server serv = Bukkit.getServer();
-		
-		config.load();
-		List<String> worldconfig = config.getStringList("worlds", null);
-		if(worldconfig == null)
-		{
-			log.info(desc.getName() + " is not enabled for any worlds due to lack of config.");
-			return;
-		}
-
-		log.info("Loading worlds for " + desc.getName());
-		for(String worldname : worldconfig)
-		{
-			log.info("Loading world " + worldname);
-			// TODO - configurable environment types
-			serv.createWorld(worldname, World.Environment.NORMAL, new NullChunkGenerator());
-		}
-		log.info("Worlds loaded!");
 
 		log.info(desc.getName() + " version " + desc.getVersion() + " is enabled!");
 	}
