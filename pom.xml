@@ -2,20 +2,20 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>uk.me.elizabethmyers</groupId>
   <artifactId>NullTerrain</artifactId>
-  <version>0.4.1</version>
+  <version>0.4.2</version>
   <name>NullTerrain</name>
   <url>http://elizabethmyers.me.uk</url>
   <repositories>
     <repository>
-     <id>sk89q-mvn2</id>
-     <url>http://mvn2.sk89q.com/repo</url>
+      <id>bukkit-repo</id>
+      <url>http://repo.bukkit.org/content/groups/public</url>
     </repository>
   </repositories>
   <dependencies>
     <dependency>
       <groupId>org.bukkit</groupId>
       <artifactId>bukkit</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
+      <version>1.2.3-R0.1</version>
       <type>jar</type>
       <scope>compile</scope>
     </dependency>
