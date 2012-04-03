@@ -1,13 +1,10 @@
 package uk.me.elizabethmyers.nullterrain;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.Random;
+
 import org.bukkit.Location;
-import org.bukkit.generator.BlockPopulator;
-import org.bukkit.generator.ChunkGenerator;
-import org.bukkit.Material;
 import org.bukkit.World;
+import org.bukkit.generator.ChunkGenerator;
 
 public class NullChunkGenerator extends ChunkGenerator
 {
