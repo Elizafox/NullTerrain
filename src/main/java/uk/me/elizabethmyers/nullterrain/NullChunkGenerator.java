@@ -9,7 +9,7 @@ public class NullChunkGenerator extends ChunkGenerator
 {
 	public byte[] generate(World world, Random random, int cx, int cz)
 	{
-		return new byte[32768];
+		return new byte[65536];
 	}
 
 	@Override
