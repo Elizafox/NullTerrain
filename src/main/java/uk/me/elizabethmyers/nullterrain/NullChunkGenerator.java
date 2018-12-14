@@ -7,9 +7,10 @@ import org.bukkit.World;
 
 public class NullChunkGenerator extends ChunkGenerator
 {
-	public byte[] generate(World world, Random random, int cx, int cz)
+	@Override
+	public ChunkData generateChunkData(World world, Random random, int cx, int cz, ChunkGenerator.BiomeGrid biome)
 	{
-		return new byte[65536];
+		return createChunkData(world);
 	}
 
 	@Override
